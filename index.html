@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="/assets/css/normalize.css" rel="stylesheet" />
     <link type="text/css" href="/assets/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="/assets/css/w3.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +16,7 @@
           <img src="assets\images\LOGO-RAITEK bo canh-05 3.png" alt="raitex" />
         </div>
         <div class="center"></div>
-        <nav>
+        <nav id="l-menu" class="mobile-hide">
           <ul>
             <li>Về chúng tôi</li>
             <li>Dịch vụ</li>
@@ -22,11 +24,17 @@
             <li>Đôi tác</li>
             <li>Tin Tức</li>
           </ul>
-          
         </nav>
-        <div id="language">
+        <div id="language" class="mobile-hide">
           <img src="assets\icons\image 22.png" alt="viet nam" />
           <img src="assets\icons\image 23.png" alt="" />
+        </div>
+        <div
+          id="mobile-icon-menu"
+          class="hide-desktop hide-tablet"
+          onclick="openmenu()"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
       </div>
       <div id="video-banner">
@@ -34,24 +42,22 @@
         <img src="assets\images\Hero Section.png" alt="" />
       </div>
       <div id="slogan">
-        <div class="wrapper">
-          <h1>CUNG CẤP GIẢI PHÁP NĂNG LƯỢNG TÁI TẠO</h1>
-          <p>
-            Với nền tảng chuyên môn và nhiều năm kinh nghiệm về năng lượng tái
-            tạo giúp Raitek trở nên khác biệt. Chúng tôi có niềm đam mê nghiên
-            cứu và phát triển để hoàn thành sứ mệnh mang lại nguồn năng lượng
-            sạch cho cuộc sống với tính năng đa dạng, tiện lợi, chất lượng cao,
-            độ tin cậy và tối ưu được mọi chi phí cho khách hàng với một thái độ
-            chuyên nghiệp nhất.
-          </p>
-        </div>
+        <h1>CUNG CẤP GIẢI PHÁP NĂNG LƯỢNG TÁI TẠO</h1>
+        <p>
+          Với nền tảng chuyên môn và nhiều năm kinh nghiệm về năng lượng tái tạo
+          giúp Raitek trở nên khác biệt. Chúng tôi có niềm đam mê nghiên cứu và
+          phát triển để hoàn thành sứ mệnh mang lại nguồn năng lượng sạch cho
+          cuộc sống với tính năng đa dạng, tiện lợi, chất lượng cao, độ tin cậy
+          và tối ưu được mọi chi phí cho khách hàng với một thái độ chuyên
+          nghiệp nhất.
+        </p>
       </div>
       <div id="why" style="background-image: url(assets/images/Community.png)">
         <h2>
           TẠI SAO SỬ DỤNG ĐIỆN MẶT TRỜI LÀ LỰA CHỌN TỐT NHẤT CHO TƯƠNG LAI?
         </h2>
-        <div class="wrapper">
-          <div class="item">
+        <div class="wrapper w3-row">
+          <div class="item w3-col l3 m3">
             <img src="assets\icons\Icon2.png" alt="bao ve moi truong" />
             <h3>BẢO VỆ MÔI TRƯỜNG</h3>
             <p>
@@ -60,7 +66,7 @@
               trong việc chống biến đổi khí hậu được áp dụng trên toàn cầu.
             </p>
           </div>
-          <div class="item">
+          <div class="item w3-col l3 m3">
             <img src="assets\icons\Icon3.png" alt="phat trien ben vung" />
             <h3>PHÁT TRIỂN BỀN VỮNG</h3>
             <p>
@@ -70,7 +76,7 @@
               phát triển bền vững.
             </p>
           </div>
-          <div class="item">
+          <div class="item w3-col l3 m3">
             <img src="assets\icons\Icon4.png" alt="giam chi phi dien" />
             <h3>GIẢM CHI PHÍ ĐIỆN</h3>
             <p>
@@ -78,7 +84,7 @@
               lên đến 85% chi phí điện năng hàng tháng.
             </p>
           </div>
-          <div class="item">
+          <div class="item w3-col l3 m3">
             <img src="assets\icons\Icon5.png" alt="chat luong cuoc song" />
             <h3>CHẤT LƯỢNG CUỘC SỐNG</h3>
             <p>
@@ -92,8 +98,8 @@
       </div>
       <div id="services">
         <h2>Dịch vụ của chúng tôi</h2>
-        <div class="wrapper">
-          <div class="item">
+        <div class="wrapper w3-row">
+          <div class="item w3-col l6">
             <img
               src="assets\images\save money with solar 9.png"
               alt="van hanh bao duong"
@@ -110,7 +116,7 @@
               <button>TÌM HIỂU THÊM</button>
             </div>
           </div>
-          <div class="item">
+          <div class="item w3-col l6">
             <img
               src="assets\images\save money with solar 10.png"
               alt="danh gia ky thuat"
@@ -127,7 +133,7 @@
               <button>TÌM HIỂU THÊM</button>
             </div>
           </div>
-          <div class="item">
+          <div class="item w3-col l6">
             <img
               src="assets\images\save money with solar 11.png"
               alt="lap dat tron goi"
@@ -143,7 +149,7 @@
               <button>TÌM HIỂU THÊM</button>
             </div>
           </div>
-          <div class="item">
+          <div class="item w3-col l6">
             <img
               src="assets\images\save money with solar 12.png"
               alt="quan ly tai san"
@@ -205,21 +211,29 @@
           dự án, điều này khẳng định được năng lực và kinh nghiệm của chúng tôi
           khi nhận được sự tin tưởng của Quý đối tác.
         </p>
-        <div class="wrapper">
+        <div class="wrapper w3-row">
           <img
+            class="item w3-col"
             src="assets\images\Copy-of-SkyX-Solar-Logo-Final-transparent 1.png"
             alt=""
           />
           <img
+            class="item w3-col"
             src="assets\images\photo_2022-04-16_13-40-47-removebg-preview 1.png"
             alt=""
           />
-          <img src="assets\images\EDP_Renováveis_2022 1.png" alt="" />
           <img
+            class="item w3-col"
+            src="assets\images\EDP_Renováveis_2022 1.png"
+            alt=""
+          />
+          <img
+            class="item w3-col"
             src="assets\images\z3897681122465_2535a6bcef9afc6ffeff64294535647a 1.png"
             alt=""
           />
           <img
+            class="item w3-col"
             src="assets\images\z3897681122465_2535a6bcef9afc6ffeff64294535647a 1.png"
             alt=""
           />
@@ -227,8 +241,8 @@
       </div>
       <div id="projects">
         <h2>CÁC DỰ ÁN TIÊU BIỂU</h2>
-        <div class="wrapper">
-          <div class="item">
+        <div class="wrapper w3-row">
+          <div class="item w3-col l4">
             <img
               src="assets\images\image 18.png"
               alt="Creating Streamlined Safeguarding Processes with OneRen"
@@ -238,7 +252,7 @@
               <button>Readmore</button>
             </div>
           </div>
-          <div class="item">
+          <div class="item w3-col l4">
             <img
               src="assets\images\image 19.png"
               alt="What are your safeguarding responsibilities and how can you manage them?"
@@ -251,7 +265,7 @@
               <button>Readmore</button>
             </div>
           </div>
-          <div class="item">
+          <div class="item w3-col l4">
             <img
               src="assets\images\image 20.png"
               alt="Revamping the Membership Model with Triathlon Australia"
@@ -268,69 +282,74 @@
       </div>
       <div
         id="experience"
-        style="background-image: url(assets\images\Footer.png)"
+        style="background-image: url(assets/images/Footer.png)"
       >
         <h2>
           HÃY BẮT ĐẦU TRẢI NGHIỆM TIỆN ÍCH NĂNG LƯỢNG MẶT TRỜI NGAY HÔM NAY
         </h2>
         <div class="wrapper">
           <div class="box">
-            <img src="" alt="" />
+            <img src="assets/icons/icon footer-04.png" alt="" />
             <input type="text" placeholder="Số điện thoại" />
           </div>
           <div class="box">
-            <img src="" alt="" />
+            <img src="assets/icons/icon footer-05.png" alt="" />
             <input type="text" placeholder="E-mail" />
           </div>
           <button>Gửi</button>
         </div>
       </div>
       <div id="footer">
-        <div class="wrapper">
-          <div class="logo">
-            <img
-              src="assets\images\LOGO-RAITEK bo canh-05 3.png"
-              alt="raitex"
-            />
+        <div id="info" class="w3-row">
+          <div class="wrapper w3-col l6">
+            <div class="logo">
+              <img
+                src="assets\images\LOGO-RAITEK bo canh-05 3.png"
+                alt="raitex"
+              />
+            </div>
+            <p>Copyright © 2023</p>
+            <p>All rights reserved</p>
+            <div class="item">
+              <img src="assets/icons/icon footer-01.png" alt="facebook" />
+              <img src="assets/icons/icon footer-02.png" alt="youtube" />
+              <img src="assets/icons/icon footer-03.png" alt="linkedin" />
+            </div>
           </div>
-          <p>Copyright © 2023</p>
-          <p>All rights reserved</p>
-          <div class="item">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="item">
-            <h3>Về chúng tôi</h3>
-            <ul>
-              <li>Giới thiệu</li>
-              <li>Thành tựu</li>
-            </ul>
-          </div>
-          <div class="item">
-            <h3>Về chúng tôi</h3>
-            <ul>
-              <li>Dịch vụ O&M</li>
-              <li>Dịch vụ Technical</li>
-              <li>Dịch vụ EPC</li>
-              <li>Dịch vụ quản lý tài sản</li>
-            </ul>
-          </div>
-          <div class="item">
-            <h3>Thông tin liên hệ</h3>
-            <ul>
-              <li>Mail: <a href="mailto:marketing@raitek.vn"></a></li>
-              <li>Số điện thoại: <a href="tel:0969628905">096 962 89 05</a></li>
-              <li>
-                Địa chỉ: C20 ĐS1 số 295 Tân Kỳ Tân Quý, phường Tân Sơn Nhì, quận
-                Tân Phú, TP. HCM
-              </li>
-            </ul>
+          <div class="wrapper w3-col l6 w3-row">
+            <div class="item w3-col l3">
+              <h3>Về chúng tôi</h3>
+              <ul>
+                <li>Giới thiệu</li>
+                <li>Thành tựu</li>
+              </ul>
+            </div>
+            <div class="item w3-col l3">
+              <h3>Về chúng tôi</h3>
+              <ul>
+                <li>Dịch vụ O&M</li>
+                <li>Dịch vụ Technical</li>
+                <li>Dịch vụ EPC</li>
+                <li>Dịch vụ quản lý tài sản</li>
+              </ul>
+            </div>
+            <div class="item w3-col l6">
+              <h3>Thông tin liên hệ</h3>
+              <ul>
+                <li>Mail: <a href="mailto:marketing@raitek.vn"></a></li>
+                <li>
+                  Số điện thoại: <a href="tel:0969628905">096 962 89 05</a>
+                </li>
+                <li>
+                  Địa chỉ: C20 ĐS1 số 295 Tân Kỳ Tân Quý, phường Tân Sơn Nhì,
+                  quận Tân Phú, TP. HCM
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="assets/js/showHideTopBar.js"></script>
   </body>
 </html>
