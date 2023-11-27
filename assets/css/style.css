@@ -1,3 +1,10 @@
+@font-face{
+    font-family: helve;
+    src: url("/assets/fonts/UTM-Helve.ttf")
+}
+body {
+    font-family: helve, "Helvetica Neue", Helvetica, sans-serif;
+}
 #main {
     margin: 0 auto;
 }
@@ -5,6 +12,8 @@
     background-color: #4d4d4d;
     display: flex;
     align-items: center;
+    min-width: 1280px;
+    max-width: 1920px;
 }
 
 #top #logo img {
@@ -53,6 +62,7 @@
 
 #video-banner {
     width: 100%;
+    display: flex;
 }
 
 #video-banner video {
@@ -72,21 +82,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-#slogan .wrapper {
-    width: 1448px;
-    height: 213px;
+#slogan  h1 {
+    font-size: 3rem;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    min-width: 1280px;
 }
 
-#slogan .wrapper h1 {
-    font-size: 64px;
-    line-height: 30.6px;
-}
-
-#slogan .wrapper p {
-    font-size: 16px;
+#slogan p {
+    font-size: 1.2rem;
     line-height: 20px;
+    color: #fff;
+    margin: 0 30px;
+    min-width: 1280px;
 }
 #why {
     display: flex;
@@ -96,9 +108,9 @@
 }
 
 #why h2 {
-    width: 80%;
-    font-size: 64px;
-    line-height: 97.6px;
+    min-width: 1280px;
+    font-size: 2rem;
+    line-height: 50px;
     margin: 0;
     color: #fff;
     margin-top: 39.35px;
@@ -107,13 +119,13 @@
 }
 #why .wrapper{
     width: 80%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    gap: 38.25px;
+    gap: 38.25px; */
+    min-width: 1280px;
 }
 #why .wrapper .item {
-    flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -128,7 +140,7 @@
 }
 #why .wrapper .item h3 {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.2em;
     line-height: 35px;
     font-weight: 700;
     text-align: center;
@@ -139,7 +151,7 @@
     font-size: 16px;
     line-height: 17.5px;
     text-align: center;
-    width: 50%;
+    width: 70%;
     text-shadow: 1px 1px #696969;
 }
 #services{
@@ -147,28 +159,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 #services h2 {
     width: 80%;
-    font-size: 64px;
-    line-height: 97.6px;
+    font-size: 2rem;
+    line-height: 50px;
     margin: 0;
     margin-top: 39.35px;
     text-align: center;
     font-weight: 600;
 }
 #services .wrapper {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     gap: 35px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    min-width: 1280px;
 }
 #services .wrapper .item {
-    width: 45%;
+    /* width: 45%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 500px; */
+    gap: 30px
     
 }
 #services .wrapper .item:nth-child(odd){
@@ -177,12 +193,15 @@
 #services .wrapper .item:nth-child(even){
     flex-direction: column-reverse;
 }
+#services .wrapper .item img {
+    width: 95%;
+}
 #services .wrapper .item div {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
     padding: 20px;
 }
 #services .wrapper .item div p{
@@ -208,8 +227,8 @@
 }
 #numbers h2 {
     width: 80%;
-    font-size: 64px;
-    line-height: 97.6px;
+    font-size: 2rem;
+    line-height: 50px;
     margin: 0;
     margin-top: 39.35px;
     text-align: center;
@@ -225,7 +244,7 @@
     flex-wrap: wrap;
     gap: 40%;
     flex-wrap: wrap;
-    margin: 40px 0 100px;
+    margin: 40px 0 70px;
 }
 #numbers .wrapper .item {
     display: flex;
@@ -245,6 +264,149 @@
     margin: 0;
     font-size: 11.14px;
     line-height: 16.7px;
+}
+#partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    min-width: 1280px;
+    max-width: 1920px;
+}
+#partner h2 {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 50px;
+    margin: 0;
+    margin-top: 39.35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+}
+#partner p {
+    max-width: 1920px;
+    min-width: 1290px;
+    margin: 0 30px;
+    text-align: center;
+}
+#partner .wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    max-width: 1920px;
+    min-width: 1280px;
+}
+#partner .wrapper img{
+    /* width: 200px; */
+    width: 20%;
+}
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    min-width: 1280px;
+    max-width: 1920px;
+}
+#projects h2 {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 50px;
+    margin: 0;
+    margin-top: 39.35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+}
+#projects .wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; */
+}
+#projects .wrapper .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#projects .wrapper .item .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    background-color: #fff;
+}
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1280px;
+    max-width: 1920px;
+}
+#experience h2 {
+    width: 70%;
+    font-size: 2rem;
+    line-height: 50px;
+    margin: 0;
+    margin-top: 39.35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+    color: #fff;
+}
+#experience .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+#experience .wrapper .box{
+    background-color: #82cd47;
+    border-radius: 22px;
+    margin: 10px;
+}
+#experience .wrapper .box img{
+    width: 50px;
+}
+#experience .wrapper .box input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+#experience .wrapper button {
+    border-radius: 15px;
+    width: 100px;
+    border: 0;
+    height: 35px;
+}
+#footer{
+    background-color: #0a0e0e;
+}
+#info {
+    min-width: 1280px;
+    max-width: 1920px;
+    display: flex;
+    color:#fff;
+    padding: 20px;
+}
+#info .wrapper ul{
+    padding: 0;
+}
+#info .wrapper .item img{
+    width: 50px;
+}
+#info .wrapper ul li{
+    list-style-type: none;
 }
 @media screen and (min-width: 1920px) {
     #main {
